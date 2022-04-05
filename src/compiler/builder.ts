@@ -374,6 +374,7 @@ namespace ts {
                 BuilderState.updateSignaturesFromCache(state, state.currentAffectedFilesSignatures!);
                 state.currentAffectedFilesSignatures!.clear();
                 BuilderState.updateExportedFilesMapFromCache(state, state.currentAffectedFilesExportedModulesMap);
+                state.currentAffectedFilesExportedModulesMap?.clear();
                 state.affectedFiles = undefined;
             }
 
