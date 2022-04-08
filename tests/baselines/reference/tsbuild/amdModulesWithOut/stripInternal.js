@@ -4913,11 +4913,11 @@ Output::
 
 [[90m12:00:35 AM[0m] Building project '/src/lib/tsconfig.json'...
 
-[[90m12:00:43 AM[0m] Project 'src/app/tsconfig.json' is out of date because output of its dependency 'src/lib' has changed
+[[90m12:00:44 AM[0m] Project 'src/app/tsconfig.json' is out of date because output of its dependency 'src/lib' has changed
 
-[[90m12:00:44 AM[0m] Updating output of project '/src/app/tsconfig.json'...
+[[90m12:00:45 AM[0m] Updating output of project '/src/app/tsconfig.json'...
 
-[[90m12:00:49 AM[0m] Updating unchanged output timestamps of project '/src/app/tsconfig.json'...
+[[90m12:00:51 AM[0m] Updating unchanged output timestamps of project '/src/app/tsconfig.json'...
 
 exitCode:: ExitStatus.Success
 
@@ -8738,17 +8738,17 @@ export namespace normalN {
 
 Output::
 /lib/tsc --b /src/app --verbose
-[[90m12:00:56 AM[0m] Projects in this build: 
+[[90m12:00:58 AM[0m] Projects in this build: 
     * src/lib/tsconfig.json
     * src/app/tsconfig.json
 
-[[90m12:00:57 AM[0m] Project 'src/lib/tsconfig.json' is out of date because oldest output 'src/lib/module.tsbuildinfo' is older than newest input 'src/lib/file1.ts'
+[[90m12:00:59 AM[0m] Project 'src/lib/tsconfig.json' is out of date because oldest output 'src/lib/module.tsbuildinfo' is older than newest input 'src/lib/file1.ts'
 
-[[90m12:00:58 AM[0m] Building project '/src/lib/tsconfig.json'...
+[[90m12:01:00 AM[0m] Building project '/src/lib/tsconfig.json'...
 
-[[90m12:01:06 AM[0m] Project 'src/app/tsconfig.json' is out of date because output of its dependency 'src/lib' has changed
+[[90m12:01:09 AM[0m] Project 'src/app/tsconfig.json' is out of date because output of its dependency 'src/lib' has changed
 
-[[90m12:01:07 AM[0m] Updating output of project '/src/app/tsconfig.json'...
+[[90m12:01:10 AM[0m] Updating output of project '/src/app/tsconfig.json'...
 
 exitCode:: ExitStatus.Success
 

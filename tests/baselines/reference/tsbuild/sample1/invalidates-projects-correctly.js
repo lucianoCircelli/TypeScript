@@ -247,7 +247,6 @@ directoryExists:: {
 } 
 
 getModifiedTimes:: {
- "/user/username/projects/logic/tsconfig.tsbuildinfo": 1,
  "/user/username/projects/logic/index.ts": 1,
  "/user/username/projects/logic/index.d.ts": 1
 } 
@@ -333,7 +332,6 @@ directoryExists:: {
 } 
 
 getModifiedTimes:: {
- "/user/username/projects/logic/tsconfig.tsbuildinfo": 1,
  "/user/username/projects/logic/index.ts": 1
 } 
 
