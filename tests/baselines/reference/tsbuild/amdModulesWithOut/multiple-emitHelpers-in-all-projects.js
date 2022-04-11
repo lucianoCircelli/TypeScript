@@ -2191,10 +2191,7 @@ getModifiedTime:: {
  "/src/app/module.d.ts": 1
 }
 
-setModifiedTime:: {
- "/src/app/module.d.ts": 1,
- "/src/app/module.d.ts.map": 1
-}
+setModifiedTime:: {}
 
 fileExists:: {
  "/src/lib/module.js": 1,
@@ -2210,8 +2207,6 @@ directoryExists:: {
 }
 
 
-//// [/src/app/module.d.ts] file changed its modified time
-//// [/src/app/module.d.ts.map] file changed its modified time
 //// [/src/app/module.js]
 var __read = (this && this.__read) || function (o, n) {
     var m = typeof Symbol === "function" && o[Symbol.iterator];
@@ -3810,19 +3805,19 @@ export const x = 10;function forlibfile1Rest() { }console.log(x);
 
 Output::
 /lib/tsc --b /src/app --verbose
-[[90m12:01:01 AM[0m] Projects in this build: 
+[[90m12:00:59 AM[0m] Projects in this build: 
     * src/lib/tsconfig.json
     * src/app/tsconfig.json
 
-[[90m12:01:02 AM[0m] Project 'src/lib/tsconfig.json' is out of date because oldest output 'src/lib/module.tsbuildinfo' is older than newest input 'src/lib/file1.ts'
+[[90m12:01:00 AM[0m] Project 'src/lib/tsconfig.json' is out of date because oldest output 'src/lib/module.tsbuildinfo' is older than newest input 'src/lib/file1.ts'
 
-[[90m12:01:03 AM[0m] Building project '/src/lib/tsconfig.json'...
+[[90m12:01:01 AM[0m] Building project '/src/lib/tsconfig.json'...
 
-[[90m12:01:11 AM[0m] Project 'src/app/tsconfig.json' is out of date because output of its dependency 'src/lib' has changed
+[[90m12:01:09 AM[0m] Project 'src/app/tsconfig.json' is out of date because output of its dependency 'src/lib' has changed
 
-[[90m12:01:12 AM[0m] Updating output of project '/src/app/tsconfig.json'...
+[[90m12:01:10 AM[0m] Updating output of project '/src/app/tsconfig.json'...
 
-[[90m12:01:17 AM[0m] Updating unchanged output timestamps of project '/src/app/tsconfig.json'...
+[[90m12:01:15 AM[0m] Updating unchanged output timestamps of project '/src/app/tsconfig.json'...
 
 exitCode:: ExitStatus.Success
 
@@ -3840,10 +3835,7 @@ getModifiedTime:: {
  "/src/app/module.d.ts": 1
 }
 
-setModifiedTime:: {
- "/src/app/module.d.ts": 1,
- "/src/app/module.d.ts.map": 1
-}
+setModifiedTime:: {}
 
 fileExists:: {
  "/src/lib/module.js": 1,
@@ -3859,8 +3851,6 @@ directoryExists:: {
 }
 
 
-//// [/src/app/module.d.ts] file changed its modified time
-//// [/src/app/module.d.ts.map] file changed its modified time
 //// [/src/app/module.js]
 var __read = (this && this.__read) || function (o, n) {
     var m = typeof Symbol === "function" && o[Symbol.iterator];

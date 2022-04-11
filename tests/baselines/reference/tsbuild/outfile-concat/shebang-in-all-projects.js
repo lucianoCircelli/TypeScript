@@ -3387,10 +3387,7 @@ getModifiedTime:: {
  "/src/third/thirdjs/output/third-output.d.ts": 1
 }
 
-setModifiedTime:: {
- "/src/third/thirdjs/output/third-output.d.ts": 1,
- "/src/third/thirdjs/output/third-output.d.ts.map": 1
-}
+setModifiedTime:: {}
 
 fileExists:: {
  "/src/first/bin/first-output.js": 1,
@@ -3662,8 +3659,6 @@ declare function f(): string;
   "size": 254
 }
 
-//// [/src/third/thirdjs/output/third-output.d.ts] file changed its modified time
-//// [/src/third/thirdjs/output/third-output.d.ts.map] file changed its modified time
 //// [/src/third/thirdjs/output/third-output.js]
 #!someshebang first first_PART1
 var s = "Hola, world";

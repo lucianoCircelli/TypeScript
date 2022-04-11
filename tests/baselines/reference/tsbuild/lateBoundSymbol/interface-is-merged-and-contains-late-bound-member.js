@@ -192,9 +192,7 @@ getModifiedTime:: {
  "/src/tsconfig.tsbuildinfo": 1
 }
 
-setModifiedTime:: {
- "/src/src/hkt.js": 1
-}
+setModifiedTime:: {}
 
 fileExists:: {
  "/src/src/hkt.ts": 1
@@ -298,14 +296,14 @@ type A = HKT<number>[typeof sym];const x = 10;
 
 Output::
 /lib/tsc --b /src/tsconfig.json --verbose
-[[90m12:00:24 AM[0m] Projects in this build: 
+[[90m12:00:23 AM[0m] Projects in this build: 
     * src/tsconfig.json
 
-[[90m12:00:25 AM[0m] Project 'src/tsconfig.json' is out of date because oldest output 'src/tsconfig.tsbuildinfo' is older than newest input 'src/src/main.ts'
+[[90m12:00:24 AM[0m] Project 'src/tsconfig.json' is out of date because oldest output 'src/tsconfig.tsbuildinfo' is older than newest input 'src/src/main.ts'
 
-[[90m12:00:26 AM[0m] Building project '/src/tsconfig.json'...
+[[90m12:00:25 AM[0m] Building project '/src/tsconfig.json'...
 
-[[90m12:00:30 AM[0m] Updating unchanged output timestamps of project '/src/tsconfig.json'...
+[[90m12:00:29 AM[0m] Updating unchanged output timestamps of project '/src/tsconfig.json'...
 
 exitCode:: ExitStatus.Success
 
@@ -316,9 +314,7 @@ getModifiedTime:: {
  "/src/tsconfig.tsbuildinfo": 1
 }
 
-setModifiedTime:: {
- "/src/src/hkt.js": 1
-}
+setModifiedTime:: {}
 
 fileExists:: {
  "/src/src/hkt.ts": 1

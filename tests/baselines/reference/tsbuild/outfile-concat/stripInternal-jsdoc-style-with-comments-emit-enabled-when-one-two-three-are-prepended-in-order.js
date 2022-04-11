@@ -6081,11 +6081,11 @@ Output::
 
 [[90m12:01:09 AM[0m] Updating unchanged output timestamps of project '/src/second/tsconfig.json'...
 
-[[90m12:01:14 AM[0m] Project 'src/third/tsconfig.json' is out of date because output of its dependency 'src/second' has changed
+[[90m12:01:12 AM[0m] Project 'src/third/tsconfig.json' is out of date because output of its dependency 'src/second' has changed
 
-[[90m12:01:15 AM[0m] Updating output of project '/src/third/tsconfig.json'...
+[[90m12:01:13 AM[0m] Updating output of project '/src/third/tsconfig.json'...
 
-[[90m12:01:20 AM[0m] Updating unchanged output timestamps of project '/src/third/tsconfig.json'...
+[[90m12:01:18 AM[0m] Updating unchanged output timestamps of project '/src/third/tsconfig.json'...
 
 exitCode:: ExitStatus.Success
 
@@ -6106,12 +6106,7 @@ getModifiedTime:: {
  "/src/third/thirdjs/output/third-output.d.ts": 1
 }
 
-setModifiedTime:: {
- "/src/2/second-output.d.ts": 1,
- "/src/2/second-output.d.ts.map": 1,
- "/src/third/thirdjs/output/third-output.d.ts": 1,
- "/src/third/thirdjs/output/third-output.d.ts.map": 1
-}
+setModifiedTime:: {}
 
 fileExists:: {
  "/src/first/bin/first-output.js": 1,
@@ -6129,8 +6124,6 @@ directoryExists:: {
 }
 
 
-//// [/src/2/second-output.d.ts] file changed its modified time
-//// [/src/2/second-output.d.ts.map] file changed its modified time
 //// [/src/2/second-output.js]
 var s = "Hello, world";
 console.log(s);
@@ -8521,8 +8514,6 @@ declare function f(): string;
   "size": 290
 }
 
-//// [/src/third/thirdjs/output/third-output.d.ts] file changed its modified time
-//// [/src/third/thirdjs/output/third-output.d.ts.map] file changed its modified time
 //// [/src/third/thirdjs/output/third-output.js]
 var s = "Hello, world";
 console.log(s);
