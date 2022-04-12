@@ -288,8 +288,7 @@ exitCode:: ExitStatus.Success
 
 getModifiedTime:: {
  "/src/obj/tsconfig.tsbuildinfo": 1,
- "/src/bar.ts": 1,
- "/src/obj/lazyIndex.d.ts": 1
+ "/src/bar.ts": 1
 }
 
 setModifiedTime:: {}
@@ -444,8 +443,7 @@ exitCode:: ExitStatus.Success
 
 getModifiedTime:: {
  "/src/obj/tsconfig.tsbuildinfo": 1,
- "/src/bar.ts": 1,
- "/src/obj/lazyIndex.d.ts": 1
+ "/src/bar.ts": 1
 }
 
 setModifiedTime:: {}
