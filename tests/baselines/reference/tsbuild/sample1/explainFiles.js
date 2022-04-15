@@ -487,8 +487,6 @@ Output::
 
 [[90m12:00:39 AM[0m] Building project '/src/core/tsconfig.json'...
 
-[[90m12:00:47 AM[0m] Updating unchanged output timestamps of project '/src/core/tsconfig.json'...
-
 lib/lib.d.ts
   Default library for target 'es3'
 src/core/anotherModule.ts
@@ -497,9 +495,9 @@ src/core/index.ts
   Matched by include pattern '**/*' in 'src/core/tsconfig.json'
 src/core/some_decl.d.ts
   Matched by include pattern '**/*' in 'src/core/tsconfig.json'
-[[90m12:00:49 AM[0m] Project 'src/logic/tsconfig.json' is out of date because oldest output 'src/logic/tsconfig.tsbuildinfo' is older than newest input 'src/core'
+[[90m12:00:47 AM[0m] Project 'src/logic/tsconfig.json' is out of date because oldest output 'src/logic/tsconfig.tsbuildinfo' is older than newest input 'src/core'
 
-[[90m12:00:50 AM[0m] Building project '/src/logic/tsconfig.json'...
+[[90m12:00:48 AM[0m] Building project '/src/logic/tsconfig.json'...
 
 lib/lib.d.ts
   Default library for target 'es3'
@@ -511,9 +509,9 @@ src/core/anotherModule.d.ts
   File is output of project reference source 'src/core/anotherModule.ts'
 src/logic/index.ts
   Matched by include pattern '**/*' in 'src/logic/tsconfig.json'
-[[90m12:00:57 AM[0m] Project 'src/tests/tsconfig.json' is out of date because oldest output 'src/tests/tsconfig.tsbuildinfo' is older than newest input 'src/core'
+[[90m12:00:55 AM[0m] Project 'src/tests/tsconfig.json' is out of date because oldest output 'src/tests/tsconfig.tsbuildinfo' is older than newest input 'src/core'
 
-[[90m12:00:58 AM[0m] Building project '/src/tests/tsconfig.json'...
+[[90m12:00:56 AM[0m] Building project '/src/tests/tsconfig.json'...
 
 lib/lib.d.ts
   Default library for target 'es3'
@@ -812,16 +810,14 @@ class someClass2 { }
 
 Output::
 /lib/tsc --b /src/tests --explainFiles --v
-[[90m12:01:05 AM[0m] Projects in this build: 
+[[90m12:01:03 AM[0m] Projects in this build: 
     * src/core/tsconfig.json
     * src/logic/tsconfig.json
     * src/tests/tsconfig.json
 
-[[90m12:01:06 AM[0m] Project 'src/core/tsconfig.json' is out of date because oldest output 'src/core/tsconfig.tsbuildinfo' is older than newest input 'src/core/index.ts'
+[[90m12:01:04 AM[0m] Project 'src/core/tsconfig.json' is out of date because oldest output 'src/core/tsconfig.tsbuildinfo' is older than newest input 'src/core/index.ts'
 
-[[90m12:01:07 AM[0m] Building project '/src/core/tsconfig.json'...
-
-[[90m12:01:14 AM[0m] Updating unchanged output timestamps of project '/src/core/tsconfig.json'...
+[[90m12:01:05 AM[0m] Building project '/src/core/tsconfig.json'...
 
 lib/lib.d.ts
   Default library for target 'es3'
@@ -831,13 +827,13 @@ src/core/index.ts
   Matched by include pattern '**/*' in 'src/core/tsconfig.json'
 src/core/some_decl.d.ts
   Matched by include pattern '**/*' in 'src/core/tsconfig.json'
-[[90m12:01:16 AM[0m] Project 'src/logic/tsconfig.json' is up to date with .d.ts files from its dependencies
+[[90m12:01:12 AM[0m] Project 'src/logic/tsconfig.json' is up to date with .d.ts files from its dependencies
 
-[[90m12:01:18 AM[0m] Updating output timestamps of project '/src/logic/tsconfig.json'...
+[[90m12:01:13 AM[0m] Updating output timestamps of project '/src/logic/tsconfig.json'...
 
-[[90m12:01:20 AM[0m] Project 'src/tests/tsconfig.json' is up to date with .d.ts files from its dependencies
+[[90m12:01:16 AM[0m] Project 'src/tests/tsconfig.json' is up to date with .d.ts files from its dependencies
 
-[[90m12:01:22 AM[0m] Updating output timestamps of project '/src/tests/tsconfig.json'...
+[[90m12:01:17 AM[0m] Updating output timestamps of project '/src/tests/tsconfig.json'...
 
 exitCode:: ExitStatus.Success
 
@@ -953,16 +949,16 @@ Input::
 
 Output::
 /lib/tsc --b /src/tests --explainFiles --v
-[[90m12:01:24 AM[0m] Projects in this build: 
+[[90m12:01:20 AM[0m] Projects in this build: 
     * src/core/tsconfig.json
     * src/logic/tsconfig.json
     * src/tests/tsconfig.json
 
-[[90m12:01:25 AM[0m] Project 'src/core/tsconfig.json' is up to date because newest input 'src/core/index.ts' is older than oldest output 'src/core/tsconfig.tsbuildinfo'
+[[90m12:01:21 AM[0m] Project 'src/core/tsconfig.json' is up to date because newest input 'src/core/index.ts' is older than oldest output 'src/core/tsconfig.tsbuildinfo'
 
-[[90m12:01:26 AM[0m] Project 'src/logic/tsconfig.json' is up to date because newest input 'src/logic/index.ts' is older than oldest output 'src/logic/tsconfig.tsbuildinfo'
+[[90m12:01:22 AM[0m] Project 'src/logic/tsconfig.json' is up to date because newest input 'src/logic/index.ts' is older than oldest output 'src/logic/tsconfig.tsbuildinfo'
 
-[[90m12:01:27 AM[0m] Project 'src/tests/tsconfig.json' is up to date because newest input 'src/tests/index.ts' is older than oldest output 'src/tests/tsconfig.tsbuildinfo'
+[[90m12:01:23 AM[0m] Project 'src/tests/tsconfig.json' is up to date because newest input 'src/tests/index.ts' is older than oldest output 'src/tests/tsconfig.tsbuildinfo'
 
 exitCode:: ExitStatus.Success
 

@@ -282,8 +282,6 @@ Output::
 
 [[90m12:00:25 AM[0m] Building project '/src/tsconfig.json'...
 
-[[90m12:00:33 AM[0m] Updating unchanged output timestamps of project '/src/tsconfig.json'...
-
 exitCode:: ExitStatus.Success
 
 getModifiedTime:: {
@@ -430,14 +428,12 @@ export default foo()(function foobar(param: string): void {
 
 Output::
 /lib/tsc --b /src --verbose
-[[90m12:00:36 AM[0m] Projects in this build: 
+[[90m12:00:34 AM[0m] Projects in this build: 
     * src/tsconfig.json
 
-[[90m12:00:37 AM[0m] Project 'src/tsconfig.json' is out of date because oldest output 'src/obj/tsconfig.tsbuildinfo' is older than newest input 'src/bar.ts'
+[[90m12:00:35 AM[0m] Project 'src/tsconfig.json' is out of date because oldest output 'src/obj/tsconfig.tsbuildinfo' is older than newest input 'src/bar.ts'
 
-[[90m12:00:38 AM[0m] Building project '/src/tsconfig.json'...
-
-[[90m12:00:46 AM[0m] Updating unchanged output timestamps of project '/src/tsconfig.json'...
+[[90m12:00:36 AM[0m] Building project '/src/tsconfig.json'...
 
 exitCode:: ExitStatus.Success
 

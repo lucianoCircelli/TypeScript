@@ -272,7 +272,7 @@ Output::
 >> Screen clear
 [[90m12:00:49 AM[0m] File change detected. Starting incremental compilation...
 
-[[90m12:01:04 AM[0m] Found 0 errors. Watching for file changes.
+[[90m12:01:03 AM[0m] Found 0 errors. Watching for file changes.
 
 
 

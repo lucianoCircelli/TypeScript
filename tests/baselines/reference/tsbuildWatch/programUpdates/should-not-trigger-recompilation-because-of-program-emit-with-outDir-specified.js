@@ -237,9 +237,7 @@ Output::
 
 [[90m12:00:53 AM[0m] Building project '/user/username/projects/sample1/core/tsconfig.json'...
 
-[[90m12:01:04 AM[0m] Updating unchanged output timestamps of project '/user/username/projects/sample1/core/tsconfig.json'...
-
-[[90m12:01:08 AM[0m] Found 0 errors. Watching for file changes.
+[[90m12:01:06 AM[0m] Found 0 errors. Watching for file changes.
 
 
 

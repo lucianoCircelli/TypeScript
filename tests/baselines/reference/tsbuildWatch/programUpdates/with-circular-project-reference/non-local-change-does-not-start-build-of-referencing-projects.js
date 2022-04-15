@@ -673,7 +673,7 @@ getModifiedTimes:: {}
 setModifiedTimes:: {} 
 
 Output::
-[[90m12:01:37 AM[0m] Found 0 errors. Watching for file changes.
+[[90m12:01:36 AM[0m] Found 0 errors. Watching for file changes.
 
 
 

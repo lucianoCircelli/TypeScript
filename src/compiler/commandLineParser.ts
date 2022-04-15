@@ -522,6 +522,7 @@ namespace ts {
             name: "outFile",
             type: "string",
             affectsEmit: true,
+            affectsOutFileBuildInfo: true,
             isFilePath: true,
             paramType: Diagnostics.FILE,
             showInSimplifiedHelpView: true,
@@ -553,6 +554,7 @@ namespace ts {
             name: "composite",
             type: "boolean",
             affectsEmit: true,
+            affectsOutFileBuildInfo: true,
             isTSConfigOnly: true,
             category: Diagnostics.Projects,
             transpileOptionValue: undefined,
@@ -563,6 +565,7 @@ namespace ts {
             name: "tsBuildInfoFile",
             type: "string",
             affectsEmit: true,
+            affectsOutFileBuildInfo: true,
             isFilePath: true,
             paramType: Diagnostics.FILE,
             category: Diagnostics.Projects,
@@ -988,6 +991,7 @@ namespace ts {
             name: "out",
             type: "string",
             affectsEmit: true,
+            affectsOutFileBuildInfo: true,
             isFilePath: false, // This is intentionally broken to support compatability with existing tsconfig files
             // for correct behaviour, please use outFile
             category: Diagnostics.Backwards_Compatibility,

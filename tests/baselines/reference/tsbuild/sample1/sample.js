@@ -137,14 +137,13 @@ readFiles:: {
  "/src/core/anotherModule.ts": 1,
  "/src/core/index.ts": 1,
  "/src/core/some_decl.d.ts": 1,
- "/src/core/anotherModule.d.ts": 2,
  "/src/logic/tsconfig.tsbuildinfo": 1,
  "/src/logic/index.ts": 1,
  "/src/core/index.d.ts": 1,
- "/src/logic/index.d.ts": 2,
+ "/src/core/anotherModule.d.ts": 1,
  "/src/tests/tsconfig.tsbuildinfo": 1,
  "/src/tests/index.ts": 1,
- "/src/tests/index.d.ts": 1
+ "/src/logic/index.d.ts": 1
 } 
 getModifiedTime:: {
  "/src/core/tsconfig.tsbuildinfo": 1,
@@ -746,15 +745,13 @@ Output::
 
 [[90m12:00:42 AM[0m] Building project '/src/core/tsconfig.json'...
 
-[[90m12:00:50 AM[0m] Updating unchanged output timestamps of project '/src/core/tsconfig.json'...
+[[90m12:00:50 AM[0m] Project 'src/logic/tsconfig.json' is out of date because oldest output 'src/logic/tsconfig.tsbuildinfo' is older than newest input 'src/core'
 
-[[90m12:00:52 AM[0m] Project 'src/logic/tsconfig.json' is out of date because oldest output 'src/logic/tsconfig.tsbuildinfo' is older than newest input 'src/core'
+[[90m12:00:51 AM[0m] Building project '/src/logic/tsconfig.json'...
 
-[[90m12:00:53 AM[0m] Building project '/src/logic/tsconfig.json'...
+[[90m12:00:58 AM[0m] Project 'src/tests/tsconfig.json' is out of date because oldest output 'src/tests/tsconfig.tsbuildinfo' is older than newest input 'src/core'
 
-[[90m12:01:00 AM[0m] Project 'src/tests/tsconfig.json' is out of date because oldest output 'src/tests/tsconfig.tsbuildinfo' is older than newest input 'src/core'
-
-[[90m12:01:01 AM[0m] Building project '/src/tests/tsconfig.json'...
+[[90m12:00:59 AM[0m] Building project '/src/tests/tsconfig.json'...
 
 exitCode:: ExitStatus.Success
 readFiles:: {
@@ -765,14 +762,13 @@ readFiles:: {
  "/src/core/anotherModule.ts": 1,
  "/src/core/index.ts": 1,
  "/src/core/some_decl.d.ts": 1,
- "/src/core/index.d.ts": 2,
  "/src/logic/tsconfig.tsbuildinfo": 1,
  "/src/logic/index.ts": 1,
+ "/src/core/index.d.ts": 1,
  "/src/core/anotherModule.d.ts": 1,
- "/src/logic/index.d.ts": 1,
  "/src/tests/tsconfig.tsbuildinfo": 1,
  "/src/tests/index.ts": 1,
- "/src/tests/index.d.ts": 1
+ "/src/logic/index.d.ts": 1
 } 
 getModifiedTime:: {
  "/src/core/tsconfig.tsbuildinfo": 1,
@@ -1191,24 +1187,22 @@ class someClass2 { }
 
 Output::
 /lib/tsc --b /src/tests --verbose
-[[90m12:01:10 AM[0m] Projects in this build: 
+[[90m12:01:08 AM[0m] Projects in this build: 
     * src/core/tsconfig.json
     * src/logic/tsconfig.json
     * src/tests/tsconfig.json
 
-[[90m12:01:11 AM[0m] Project 'src/core/tsconfig.json' is out of date because oldest output 'src/core/tsconfig.tsbuildinfo' is older than newest input 'src/core/index.ts'
+[[90m12:01:09 AM[0m] Project 'src/core/tsconfig.json' is out of date because oldest output 'src/core/tsconfig.tsbuildinfo' is older than newest input 'src/core/index.ts'
 
-[[90m12:01:12 AM[0m] Building project '/src/core/tsconfig.json'...
+[[90m12:01:10 AM[0m] Building project '/src/core/tsconfig.json'...
 
-[[90m12:01:19 AM[0m] Updating unchanged output timestamps of project '/src/core/tsconfig.json'...
+[[90m12:01:17 AM[0m] Project 'src/logic/tsconfig.json' is up to date with .d.ts files from its dependencies
 
-[[90m12:01:21 AM[0m] Project 'src/logic/tsconfig.json' is up to date with .d.ts files from its dependencies
+[[90m12:01:18 AM[0m] Updating output timestamps of project '/src/logic/tsconfig.json'...
 
-[[90m12:01:23 AM[0m] Updating output timestamps of project '/src/logic/tsconfig.json'...
+[[90m12:01:21 AM[0m] Project 'src/tests/tsconfig.json' is up to date with .d.ts files from its dependencies
 
-[[90m12:01:25 AM[0m] Project 'src/tests/tsconfig.json' is up to date with .d.ts files from its dependencies
-
-[[90m12:01:27 AM[0m] Updating output timestamps of project '/src/tests/tsconfig.json'...
+[[90m12:01:22 AM[0m] Updating output timestamps of project '/src/tests/tsconfig.json'...
 
 exitCode:: ExitStatus.Success
 readFiles:: {
@@ -1219,7 +1213,6 @@ readFiles:: {
  "/src/core/anotherModule.ts": 1,
  "/src/core/index.ts": 1,
  "/src/core/some_decl.d.ts": 1,
- "/src/core/index.d.ts": 1,
  "/src/logic/tsconfig.tsbuildinfo": 1,
  "/src/tests/tsconfig.tsbuildinfo": 1
 } 
@@ -1336,16 +1329,16 @@ Input::
 
 Output::
 /lib/tsc --b /src/tests --verbose
-[[90m12:01:30 AM[0m] Projects in this build: 
+[[90m12:01:26 AM[0m] Projects in this build: 
     * src/core/tsconfig.json
     * src/logic/tsconfig.json
     * src/tests/tsconfig.json
 
-[[90m12:01:31 AM[0m] Project 'src/core/tsconfig.json' is up to date because newest input 'src/core/index.ts' is older than oldest output 'src/core/tsconfig.tsbuildinfo'
+[[90m12:01:27 AM[0m] Project 'src/core/tsconfig.json' is up to date because newest input 'src/core/index.ts' is older than oldest output 'src/core/tsconfig.tsbuildinfo'
 
-[[90m12:01:32 AM[0m] Project 'src/logic/tsconfig.json' is up to date because newest input 'src/logic/index.ts' is older than oldest output 'src/logic/tsconfig.tsbuildinfo'
+[[90m12:01:28 AM[0m] Project 'src/logic/tsconfig.json' is up to date because newest input 'src/logic/index.ts' is older than oldest output 'src/logic/tsconfig.tsbuildinfo'
 
-[[90m12:01:33 AM[0m] Project 'src/tests/tsconfig.json' is up to date because newest input 'src/tests/index.ts' is older than oldest output 'src/tests/tsconfig.tsbuildinfo'
+[[90m12:01:29 AM[0m] Project 'src/tests/tsconfig.json' is up to date because newest input 'src/tests/index.ts' is older than oldest output 'src/tests/tsconfig.tsbuildinfo'
 
 exitCode:: ExitStatus.Success
 readFiles:: {
@@ -1401,20 +1394,20 @@ Input::
 
 Output::
 /lib/tsc --b /src/tests --verbose
-[[90m12:01:35 AM[0m] Projects in this build: 
+[[90m12:01:31 AM[0m] Projects in this build: 
     * src/core/tsconfig.json
     * src/logic/tsconfig.json
     * src/tests/tsconfig.json
 
-[[90m12:01:36 AM[0m] Project 'src/core/tsconfig.json' is up to date because newest input 'src/core/index.ts' is older than oldest output 'src/core/tsconfig.tsbuildinfo'
+[[90m12:01:32 AM[0m] Project 'src/core/tsconfig.json' is up to date because newest input 'src/core/index.ts' is older than oldest output 'src/core/tsconfig.tsbuildinfo'
 
-[[90m12:01:37 AM[0m] Project 'src/logic/tsconfig.json' is out of date because oldest output 'src/logic/tsconfig.tsbuildinfo' is older than newest input 'src/logic/tsconfig.json'
+[[90m12:01:33 AM[0m] Project 'src/logic/tsconfig.json' is out of date because oldest output 'src/logic/tsconfig.tsbuildinfo' is older than newest input 'src/logic/tsconfig.json'
 
-[[90m12:01:38 AM[0m] Building project '/src/logic/tsconfig.json'...
+[[90m12:01:34 AM[0m] Building project '/src/logic/tsconfig.json'...
 
-[[90m12:01:46 AM[0m] Project 'src/tests/tsconfig.json' is up to date with .d.ts files from its dependencies
+[[90m12:01:42 AM[0m] Project 'src/tests/tsconfig.json' is up to date with .d.ts files from its dependencies
 
-[[90m12:01:48 AM[0m] Updating output timestamps of project '/src/tests/tsconfig.json'...
+[[90m12:01:43 AM[0m] Updating output timestamps of project '/src/tests/tsconfig.json'...
 
 exitCode:: ExitStatus.Success
 readFiles:: {
@@ -1426,7 +1419,6 @@ readFiles:: {
  "/src/logic/index.ts": 1,
  "/src/core/index.d.ts": 1,
  "/src/core/anotherModule.d.ts": 1,
- "/src/logic/decls/index.d.ts": 1,
  "/src/tests/tsconfig.tsbuildinfo": 1
 } 
 getModifiedTime:: {
@@ -1548,16 +1540,16 @@ Input::
 
 Output::
 /lib/tsc --b /src/tests --verbose
-[[90m12:01:51 AM[0m] Projects in this build: 
+[[90m12:01:47 AM[0m] Projects in this build: 
     * src/core/tsconfig.json
     * src/logic/tsconfig.json
     * src/tests/tsconfig.json
 
-[[90m12:01:52 AM[0m] Project 'src/core/tsconfig.json' is up to date because newest input 'src/core/index.ts' is older than oldest output 'src/core/tsconfig.tsbuildinfo'
+[[90m12:01:48 AM[0m] Project 'src/core/tsconfig.json' is up to date because newest input 'src/core/index.ts' is older than oldest output 'src/core/tsconfig.tsbuildinfo'
 
-[[90m12:01:53 AM[0m] Project 'src/logic/tsconfig.json' is up to date because newest input 'src/logic/index.ts' is older than oldest output 'src/logic/tsconfig.tsbuildinfo'
+[[90m12:01:49 AM[0m] Project 'src/logic/tsconfig.json' is up to date because newest input 'src/logic/index.ts' is older than oldest output 'src/logic/tsconfig.tsbuildinfo'
 
-[[90m12:01:54 AM[0m] Project 'src/tests/tsconfig.json' is up to date because newest input 'src/tests/index.ts' is older than oldest output 'src/tests/tsconfig.tsbuildinfo'
+[[90m12:01:50 AM[0m] Project 'src/tests/tsconfig.json' is up to date because newest input 'src/tests/index.ts' is older than oldest output 'src/tests/tsconfig.tsbuildinfo'
 
 exitCode:: ExitStatus.Success
 readFiles:: {

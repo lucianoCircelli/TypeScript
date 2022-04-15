@@ -684,9 +684,7 @@ Output::
 
 [[90m12:01:45 AM[0m] Building project '/user/username/projects/noEmitOnError/tsconfig.json'...
 
-[[90m12:01:54 AM[0m] Updating unchanged output timestamps of project '/user/username/projects/noEmitOnError/tsconfig.json'...
-
-[[90m12:01:58 AM[0m] Found 0 errors. Watching for file changes.
+[[90m12:01:56 AM[0m] Found 0 errors. Watching for file changes.
 
 
 
@@ -819,15 +817,15 @@ setModifiedTimes:: {}
 
 Output::
 >> Screen clear
-[[90m12:02:02 AM[0m] File change detected. Starting incremental compilation...
+[[90m12:02:00 AM[0m] File change detected. Starting incremental compilation...
 
-[[90m12:02:03 AM[0m] Project 'tsconfig.json' is out of date because oldest output 'dev-build/tsconfig.tsbuildinfo' is older than newest input 'src/main.ts'
+[[90m12:02:01 AM[0m] Project 'tsconfig.json' is out of date because oldest output 'dev-build/tsconfig.tsbuildinfo' is older than newest input 'src/main.ts'
 
-[[90m12:02:04 AM[0m] Building project '/user/username/projects/noEmitOnError/tsconfig.json'...
+[[90m12:02:02 AM[0m] Building project '/user/username/projects/noEmitOnError/tsconfig.json'...
 
-[[90m12:02:06 AM[0m] Updating unchanged output timestamps of project '/user/username/projects/noEmitOnError/tsconfig.json'...
+[[90m12:02:03 AM[0m] Updating unchanged output timestamps of project '/user/username/projects/noEmitOnError/tsconfig.json'...
 
-[[90m12:02:07 AM[0m] Found 0 errors. Watching for file changes.
+[[90m12:02:05 AM[0m] Found 0 errors. Watching for file changes.
 
 
 
